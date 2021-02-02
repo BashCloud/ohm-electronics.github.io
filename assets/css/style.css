@@ -1768,14 +1768,16 @@ section {
   position: relative;
   width: 100%;
 }
+.object-image:hover {
+  box-shadow: 0 0 30px rgba(0,0,0,0.15);
+}
 
 .gallery-img {
-  width: 320px;
+  width: 100%;
   height: auto;
   display: block;
   margin-bottom: 20px;
   background-color: #ffffff;
-  padding: 20px;
 }
 
 
@@ -1785,20 +1787,23 @@ section {
   left: 0;
   right: 0;
   height: 50px;
-  width: 320px;
+  width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: #c4c4c4;
+  transform: translateY(50px);
+  transition: all .5s ease;
+  background-color: rgba(0,0,0,0.6);
 }
 
 .object-image:hover .object-overlay {
   opacity: 1;
+  transform: translateY(0px);
 }
 
 .gallery-image__text {
-  color: #143A56;
-  font-size: 18px;
-  font-weight: 700;
+  color: #ffffff;
+  line-height: 18px;
+  font-size: 16px;
+  font-weight: 500;
   position: absolute;
   top: 50%;
   left: 50%;
